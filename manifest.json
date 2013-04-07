@@ -1,0 +1,19 @@
+{
+  "name":"Chitose",
+  "version":"1.0",
+  "manifest_version":2,
+  "description":"JR北海道、駅検索ページで千歳（千葉県）を抑止する",
+  "content_scripts":[
+    {
+      "matches":[
+        "http://www3.jrhokkaido.co.jp/*"
+      ],
+      "js":["contentscript.js"],
+      "run_at":"document_end"
+    }
+  ],
+  "permissions":[
+    "tabs"
+  ]
+}
+
